@@ -1,7 +1,8 @@
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2008
-
-Project("{0BF2C6BC-4121-AE75-A3F9-F3A441421429}") = "Unity3D", "Assembly-CSharp-firstpass-vs.csproj", "{7A8DE0DD-2AAA-D81D-C50B-EB5F579FB317}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass-vs", "Assembly-CSharp-firstpass-vs.csproj", "{7A8DE0DD-2AAA-D81D-C50B-EB5F579FB317}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSlib", "FSlib\FSlib.fsproj", "{B644A915-118D-414B-B292-9416E0656895}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,21 +14,24 @@ Global
 		{7A8DE0DD-2AAA-D81D-C50B-EB5F579FB317}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A8DE0DD-2AAA-D81D-C50B-EB5F579FB317}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A8DE0DD-2AAA-D81D-C50B-EB5F579FB317}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B644A915-118D-414B-B292-9416E0656895}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B644A915-118D-414B-B292-9416E0656895}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B644A915-118D-414B-B292-9416E0656895}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B644A915-118D-414B-B292-9416E0656895}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-				GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Assembly-CSharp-firstpass.csproj
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
-		$0.TextStylePolicy = $1
+		$0.TextStylePolicy = $3
 		$1.inheritsSet = null
 		$1.scope = text/x-csharp
 		$0.CSharpFormattingPolicy = $2
 		$2.inheritsSet = Mono
 		$2.inheritsScope = text/x-csharp
 		$2.scope = text/x-csharp
-		$0.TextStylePolicy = $3
 		$3.FileWidth = 120
 		$3.TabWidth = 4
 		$3.EolMarker = Unix
@@ -35,5 +39,4 @@ Global
 		$3.inheritsScope = text/plain
 		$3.scope = text/plain
 	EndGlobalSection
-
 EndGlobal

@@ -1,15 +1,16 @@
 module FSlib.AssemblyInfo
+
 open System.Reflection
 open System.Runtime.CompilerServices
 
 
-[<assembly: AssemblyTitle("FSlib")>]
-[<assembly: AssemblyDescription("")>]
+[<assembly: AssemblyTitle("Unity FSharp Library")>]
+[<assembly: AssemblyDescription("FSharp Library for Integrating with Unity3D")>]
 [<assembly: AssemblyConfiguration("")>]
-[<assembly: AssemblyCompany("")>]
-[<assembly: AssemblyProduct("")>]
-[<assembly: AssemblyCopyright("jhaas")>]
-[<assembly: AssemblyTrademark("")>]
+[<assembly: AssemblyCompany("Jerold Haas")>]
+[<assembly: AssemblyProduct("FSharp Library for Unity")>]
+[<assembly: AssemblyCopyright("Jerold Haas")>]
+[<assembly: AssemblyTrademark("Jerold Haas")>]
 
 // The assembly version has the format {Major}.{Minor}.{Build}.{Revision}
 

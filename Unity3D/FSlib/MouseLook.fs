@@ -1,5 +1,4 @@
-//namespace FSlib
-
+namespace UnityEngine.FSharp
 
 open UnityEngine
 open System.Collections
@@ -9,43 +8,21 @@ type public RotationAxes =
     | MouseX        = 1
     | MouseY        = 2
 
-
 [<AddComponentMenu("Camera-Control/Mouse Look")>]
 type public MouseLook() =
     inherit UnityEngine.MonoBehaviour()
 
-    let axes = RotationAxes.MouseXandY
-    let sensitivityX = 15.0f
-    let sensitivityY = 15.0f
-    let minimumX = -360.0f
-    let maximumX = 360.0f
-    let minimumY = -60.0f
-    let maximumY = 60.0f
-    let rotationY = 0.0f
-    let rotationX = 0.0f
-    
-
-    member x.Axes 
-        with get() = axes and set(s) = ()
-    member x.SensitivityX 
-        with get() = sensitivityX and set(s) = ()
-    member x.SensitivityY 
-        with get() = sensitivityY and set(s) = ()
-    member x.MinimumX
-        with get() = minimumX and set(s) = ()
-    member x.MaximumX 
-        with get() = maximumX and set(s) = ()
-    member x.MinimumY 
-        with get() = minimumY and set(s) = ()
-    member x.MaximumY
-        with get() = maximumY and set(s) = ()
-    member x.RotationY 
-        with get() = rotationY and set(s) = ()
-    member x.RotationX
-        with get() = rotationX and set(s) = ()
+    member val Axes = RotationAxes.MouseXandY with get, set
+    member val SensitivityX = 15.0f with get, set
+    member val SensitivityY = 15.0f with get, set
+    member val MinimumX = -360.0f with get, set
+    member val MaximumX = 360.0f with get, set
+    member val MinimumY = 60.0f with get, set
+    member val MaximumY = 0.0f with get, set
+    member val RotationY = 0.0f with get, set
+    member val RotationX = 0.0f with get, set
         
-        
-    member x.Update() : void =
+    member x.Update() =
         if (x.Axes = RotationAxes.MouseXandY) then
             x.RotationX <- x.transform.localEulerAngles.y + Input.GetAxis("Mouse X") * x.SensitivityX
 
@@ -62,7 +39,9 @@ type public MouseLook() =
             x.transform.localEulerAngles <-
                 new Vector3(-x.RotationY, x.transform.localEulerAngles.y, 0.0f)
                 
+   (*
                 
     member x.Start() : void =
         if (x.rigidbody) then
             rigidbody.freeze
+    *)
